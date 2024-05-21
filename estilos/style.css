@@ -1,0 +1,101 @@
+/*
+ 
+*/
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+:root{
+ 
+    --cor1: rgb(21, 127, 27);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: lightcyan;
+}
+/* Cabeçalho:*/
+#main_header{
+    height: 150px;
+    background-color: lightblue;
+    padding: 10px;
+}
+.titulo{
+    font-family: "Playfair Display SC", serif;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+/*Botões:*/
+.home{
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: center;
+}
+.login{
+    display: flex;
+    position: relative;
+    justify-content: right;
+    align-items: center;
+}
+span{
+    margin-left: 13px;
+}
+/*Main:*/
+main{
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    border-radius: 3px 3px 3px 3px ;
+    padding: 10px;
+    background-color: aliceblue;
+}
+article> h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+article > p{
+    text-align: justify;
+    text-indent: 20px;
+}
+/*Footer:*/
+footer{
+    height: 100px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+#autorSite{
+    font-size: 20px;
+    text-align: center;
+}
+/*Estilo da página 1 de cadastro: */
+
+.mainCad{
+    margin: auto;
+}
+.campCad{
+    padding: 15px;
+}
+.inpDados{
+    padding: 10px;
+    font-weight: 900;
+}
+
+
+
+
+/*
+ideias para fontes:
+tit: Dancing Script google fonts; Playfair Display SC
+Permanent Marker - fonte mais marca texto -google fonts
+
+
+"O seu lugar pra ver e ter de tudo católico, o seu cantinho confotavel
+
+*/
