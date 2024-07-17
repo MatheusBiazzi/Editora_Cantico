@@ -131,7 +131,7 @@ require_once("conexao.php")
                     <input type="text" name="isenha" id="isenha">
                 </p>
                 <p>
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Cadastrar" name="submit">
                 </p>
             </fieldset>
 

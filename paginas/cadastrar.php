@@ -1,24 +1,25 @@
-<?php       
+<?php  
+echo "pagina logica cadastro";     
+
 if(isset($_POST['submit'])){
 include_once('conexao.php');
 
-$nome =$_POST['nome'];
-$email =$_POST['email'];
-$tel =$_POST['telefone'];
-$data_nasc =$_POST['dt_nasc'];
-$cep = $_POST['cep'];
-$rua = $_POST['rua'];
-$numCasa = $_POST['numero'];
-$bairro = $_POST['bairro'];
-$comple = $_POST['complemento'];
-$senha = $_POST['senha'];
+$nome =$_POST['inome'];
+$email =$_POST['iemail'];
+$tel = $_POST['itel'];
+$data_nasc =$_POST['inasc'];
+$cep = $_POST['icep'];
+$rua = $_POST['irua'];
+$numCasa = $_POST['inumCasa'];
+$bairro = $_POST['ibairro'];
+$comple = $_POST['icomple'];
+$senha = $_POST['isenha'];
 
 $result = mysqli_query($conn,"INSERT INTO pessoas(nome,
-email, telefone, dt_nasc,cep,rua,numero,bairro,complemento,senha) values('$nome','$email','$tel','$data_nasc','$rua','$numCasa','$bairro','$comple','$cep','$senha')");
+email, telefone, dt_nasc,cep,rua,numero,bairro,complemento,senha) values('$nome','$email','$tel','$data_nasc','$cep','$rua','$numCasa','$bairro','$comple','$senha')");
 
 echo('cadastrado com sucesso: ');
 }else{
     echo "tente de novo";
 }
 ?>
-
