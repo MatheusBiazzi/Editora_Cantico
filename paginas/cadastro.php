@@ -1,7 +1,6 @@
 <?php
 require_once("conexao.php")
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +8,7 @@ require_once("conexao.php")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="shortcut icon" href="../estilos/icons/capela.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../estilos/icons/usu.png" type="image/x-icon">
     <style>
         *{
             margin: 0px;

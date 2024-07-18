@@ -1,6 +1,4 @@
-<?php  
-echo "pagina logica cadastro";     
-
+<?php
 if(isset($_POST['submit'])){
 include_once('conexao.php');
 
@@ -18,8 +16,7 @@ $senha = $_POST['isenha'];
 $result = mysqli_query($conn,"INSERT INTO pessoas(nome,
 email, telefone, dt_nasc,cep,rua,numero,bairro,complemento,senha) values('$nome','$email','$tel','$data_nasc','$cep','$rua','$numCasa','$bairro','$comple','$senha')");
 
-echo('cadastrado com sucesso: ');
 }else{
-    echo "tente de novo";
+    echo "Conferir campos";
 }
 ?>
