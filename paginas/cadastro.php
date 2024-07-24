@@ -133,7 +133,6 @@ require_once("conexao.php")
                     <input type="submit" value="Cadastrar" name="submit">
                 </p>
             </fieldset>
-
         </fieldset>
     </form>
     <footer>
