@@ -16,7 +16,7 @@ $senha = $_POST['isenha'];
 $result = mysqli_query($conn,"INSERT INTO pessoas(nome,
 email, telefone, dt_nasc,cep,rua,numero,bairro,complemento,senha) values('$nome','$email','$tel','$data_nasc','$cep','$rua','$numCasa','$bairro','$comple','$senha')");
 
-echo "Cadastrado com sucesso!";
+echo "<script> location.href='home.html';</script>";
 }else{
     echo "Conferir campos";
 }
