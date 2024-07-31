@@ -21,3 +21,28 @@ echo "<script> location.href='home.html';</script>";
     echo "Conferir campos";
 }
 ?>
+<!--
+Id's dos forms:
+inome 
+iemail
+itel
+inasc
+icep
+irua
+inumCasa
+ibairro
+icomple
+isenha
+------------------------
+Id's do banco:
+nome
+email
+telefone
+dt_nasc
+cep
+rua
+numero
+bairro
+complemento
+senha
+-->

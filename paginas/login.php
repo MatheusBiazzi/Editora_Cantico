@@ -80,7 +80,7 @@
     <section class="tLogSec">
         <button class="backBtn" onclick="window.history.back();">&larr;</button>
         <h2 style="text-align: center; margin-bottom: 20px;">Faça login</h2>
-        <form action="logar.php" method="post" class="tLogForms">
+        <form action="logar.php" method="post" class="tLogForms" autocomplete="on">
             <p>
                 <label for="iemail" class="tLoglab">E-mail:</label>
                 <input type="email" name="iemail" id="iemail" class="tLogEmail" required>

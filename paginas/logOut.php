@@ -1,8 +1,8 @@
 <?php
     session_start();
-    unset($_SESSION["usuario"]);
-    unset($_SESSION["nome"]);
+    unset($_SESSION["iemail"]);
+    unset($_SESSION["isenha"]);
     session_destroy();
-    header("location:index.php");
+    header("location:home.html");
     exit();
 ?>
