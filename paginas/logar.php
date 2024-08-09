@@ -14,7 +14,6 @@
     if($qtd > 0){
         $_SESSION["iemail"] = $iemail;
         $_SESSION["nome"] = $row->nome;
-        echo"<script> location.href='home.html';</script>";
     }else{
         echo"<script>alert('Email ou senha invalido');</script>";
     }

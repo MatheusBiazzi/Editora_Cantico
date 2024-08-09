@@ -1,8 +1,8 @@
 <?php
-if(!empty($_GET['id'])){
+if(!empty($_GET['cod_pessoa'])){
 include_once('conexao.php');
-$id = $_GET['id'];
-$sqlconsulta = "select * from cliente where id=$id";
+$id = $_GET['cod_pessoa'];
+$sqlconsulta = "select * from pessoas where id=$id";
 $result = $con->query($sqlconsulta);
 
 print_r($result);
@@ -11,7 +11,7 @@ if($result->num_rows>0){
     $nome =$user_data['nome'];
     $email =$user_data['email'];
     $telefone =$user_data['telefone'];
-    $data_nasc =$user_data['datan'];
+    $data_nasc =$user_data['dt_nasc'];
     $cidade =$user_data['cidade'];
     }
     print_r($nome);
@@ -20,16 +20,16 @@ if($result->num_rows>0){
 }}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>insercao</title>
+    <title>Editar</title>
 </head>
 <body>
     <div class="box">
-        <form action="atualiza.php" method="POST">
+        <form action="atualizar.php" method="POST">
             <fieldset>
                 <legend><b>Fórmulário de Clientes</b></legend>
                 <br>
