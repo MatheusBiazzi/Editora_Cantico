@@ -2,7 +2,7 @@
 include_once('conexao.php');
 
 if(isset($_POST['update'])){
-$id = $_POST['id'];
+$id = $_POST['cod_pessoa'];
 $nome =$_POST['nome'];
 $email =$_POST['email'];
 $telefone =$_POST['telefone'];
