@@ -6,35 +6,75 @@
     <title>Editora Cântico</title>
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="shortcut icon" href="../estilos/icons/iconVaticano.ico" type="image/x-icon">
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }   
-        .teste{
+    <style>    
+        /* Container para centralizar o bloco */
+        .product-container {
             display: flex;
-            width: 100vh;
-            align-items: center;
-            
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-       
-        header{
-            background: linear-gradient(to left,#747070, #C0C0C0);
+
+        /* Estilos do cartão de produto */
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        footer{
-            background: white;
-            margin-top: 15px;
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
-        main{
-            width: 900px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px; 
+
+        /* Estilos da imagem do produto */
+        .product-image {
+            width: 100%;
+            height: 200px; /* Tamanho fixo para a imagem */
+            object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
         }
-        header{
-            display: flex;
+
+        /* Informações do produto */
+        .product-info {
+            padding: 15px;
+            text-align: center;
         }
-        div{
-            flex: auto;
+
+        .product-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .product-author {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.125rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos do botão de compra */
+        .buy-button {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -42,9 +82,6 @@
     <header id="main_header">
         <div class="logoHeader">
             <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
-        </div>
-        <div class="botoes">
-                <div><a href="tst.html" target="_blank">Carrinho</a></div>
         </div>
         <div class="login">
                     <img src="../estilos/icons/usu.png" alt="login">
@@ -57,11 +94,20 @@
         </div>
     </header>
     <main>
-        <div>
-            <img src="../Group 1.png" alt="">
-        </div>
         <article>
-            <h1>Principais livros</h1>
+            <h1>Seu lugar de descanso do mundo...</h1>
+                <!--Conteiner dos produtos :)-->
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="../estilos/imagens/capaPadre Pio.jpg" alt="Título do Livro" class="product-image">
+                    <div class="product-info">
+                        <h2 class="product-title">Padre Pio</h2>
+                        <p class="product-author">José Carlos Zamboni</p>
+                        <p class="product-price">R$ 39,90</p>
+                        <a href="pagina-de-compra.html" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
         </article>
     </main>
     <footer>

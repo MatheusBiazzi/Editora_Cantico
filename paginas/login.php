@@ -72,7 +72,7 @@
             justify-content: center;
             cursor: pointer;
             font-size: 20px;
-}
+        }
 
 </style>
 </head>
