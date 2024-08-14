@@ -1,27 +1,15 @@
-/*
- 
-*/
-
 @charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
-
-:root{
- 
-    --cor1: rgb(21, 127, 27);
-}
 *{
     margin: 0px;
     padding: 0px;
 }
-
 body{
     background-color: lightcyan;
 }
 /* Cabeçalho:*/
 #main_header{
     height: 150px;
-    background-color: lightblue;
+    background: linear-gradient('c0c0c0');
     padding: 10px;
 }
 .titulo{
@@ -83,7 +71,6 @@ footer{
     text-align: center;
 }
 /*Estilo da página 1 de cadastro: */
-
 .mainCad{
     margin: auto;
 }
@@ -93,6 +80,26 @@ footer{
 .inpDados{
     padding: 10px;
     font-weight: 900;
+}
+body{
+    background-color: #c0c0c028;
+}
+main{
+    width: 1300px;
+    margin-bottom: 10px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    text-align: center;
+}
+header{
+    display: flex;
+    background-image: linear-gradient(to right, #c0c0c0,#383737da );
+}
+header>div{
+    flex: auto;
+}
+footer{
+    background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
 }
 /*
 Estilos da página de login
@@ -150,15 +157,4 @@ Estilos da página de login
 .tLogBtn:hover {
     background-color: #0056b3;
 }
-*/
-
-
-/*
-ideias para fontes:
-tit: Dancing Script google fonts; Playfair Display SC
-Permanent Marker - fonte mais marca texto -google fonts
-
-
-"O seu lugar pra ver e ter de tudo católico, o seu cantinho confotavel
-
 */

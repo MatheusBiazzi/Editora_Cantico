@@ -14,65 +14,65 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('background.jpg');
+    /*background-image: url('../estilos/imagens/capaCosmos.jpeg');
     background-size: cover;
-    background-position: center;
-}
-.tLogSec{
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.479);
-    width: 300px;
-    text-align: center;
-    padding-right: 45px;
-}
-.tLogForms{
-    display: flex;
-    flex-direction: column;
-}
-.tLoglab{
-    font-weight: bold;
-    margin-bottom: 8px;
-    display: block;
-    text-align: left;
-}
-.tLogEmail, .tLogSenha {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    width: 100%;
-}
-.tLogBtn{
-  
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    background-position: center;*/
+    }
+    .tLogSec{
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.479);
+        width: 300px;
+        text-align: center;
+        padding-right: 45px;
+    }
+    .tLogForms{
+        display: flex;
+        flex-direction: column;
+    }
+    .tLoglab{
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: block;
+        text-align: left;
+    }
+    .tLogEmail, .tLogSenha {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .tLogBtn{
     
-}
-.tLogBtn:hover {
-    background-color: #0056b3;
-}
-.backBtn {
-            position: absolute;
-            color: black;
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-size: 20px;
-        }
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        
+    }
+    .tLogBtn:hover {
+        background-color: #0056b3;
+    }
+    .backBtn {
+                position: absolute;
+                color: black;
+                border: none;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 20px;
+    }
 
 </style>
 </head>

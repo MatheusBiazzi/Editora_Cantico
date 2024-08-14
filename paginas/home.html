@@ -76,6 +76,31 @@
         .buy-button:hover {
             background-color: #0056b3;
         }
+        .conteinerItens{
+            display: flex;
+        }
+        .product-container{
+            flex: auto;
+            padding: 10px;
+        }
+        main{
+            width: 1300px;
+        }
+        header{
+            display: flex;
+        }
+        header>div{
+            flex: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        span>a:hover{
+            text-decoration: underline;
+            color: gold;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
@@ -95,16 +120,40 @@
     </header>
     <main>
         <article>
-            <h1>Seu lugar de descanso do mundo...</h1>
+            <h1>Produtos em destaque</h1>
                 <!--Conteiner dos produtos :)-->
-            <div class="product-container">
-                <div class="product-card">
-                    <img src="../estilos/imagens/capaPadre Pio.jpg" alt="Título do Livro" class="product-image">
-                    <div class="product-info">
-                        <h2 class="product-title">Padre Pio</h2>
-                        <p class="product-author">José Carlos Zamboni</p>
-                        <p class="product-price">R$ 39,90</p>
-                        <a href="pagina-de-compra.html" class="buy-button">Comprar</a>
+            <div class="conteinerItens">
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../estilos/imagens/capaPadre Pio.jpg" alt="Título do Livro" class="product-image">
+                        <div class="product-info">
+                            <h2 class="product-title">Padre Pio e o transumanismo critão</h2>
+                            <p class="product-author">José Carlos Zamboni</p>
+                            <p class="product-price">R$ 39,90</p>
+                            <a href="#" class="buy-button">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../estilos/imagens/capaCosmos.jpeg" alt="Título do Livro" class="product-image">
+                        <div class="product-info">
+                            <h2 class="product-title">A posição do homem no cosmos</h2>
+                            <p class="product-author">Max Scheler</p>
+                            <p class="product-price">R$ 59,90</p>
+                            <a href="#" class="buy-button">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../estilos/imagens/capaCatENOut.jpeg" alt="Título do Livro" class="product-image">
+                        <div class="product-info">
+                            <h2 class="product-title">Por que sou católico e não outra coisa?</h2>
+                            <p class="product-author">Santiago Martín</p>
+                            <p class="product-price">R$ 45,90</p>
+                            <a href="#" class="buy-button">Comprar</a>
+                        </div>
                     </div>
                 </div>
             </div>

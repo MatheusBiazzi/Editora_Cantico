@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar dados</title>
     <style>
-                body {
+        body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -65,9 +65,6 @@
     </style>
 </head>
 <body>
-<br>
-<br>
-
     <div>
         <table>
         <tr>

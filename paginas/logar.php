@@ -16,6 +16,7 @@
         $_SESSION["nome"] = $row->nome;
     }else{
         echo"<script>alert('Email ou senha invalido');</script>";
+        echo"<script>location.href='login.php';</script>";
     }
 ?>
 <!DOCTYPE html>

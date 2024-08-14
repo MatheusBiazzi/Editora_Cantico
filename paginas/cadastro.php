@@ -14,12 +14,6 @@ require_once("conexao.php")
             margin: 0px;
             padding: 0px;
         }
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 20px;
-        }
         form {
             background-color: #fff;
             padding: 20px;
@@ -76,6 +70,10 @@ require_once("conexao.php")
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+        .cad{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -84,57 +82,59 @@ require_once("conexao.php")
             <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
         </div>
     </header>
-    <form action="cadastrar.php" method="POST">
-        <fieldset>
-            <legend>Dados pessoais</legend>
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="inome" id="inome" required>
-            </p>
-            <p>
-                <label for="iemail">E-mail: </label>
-                <input type="email" name="iemail" id="iemail" required>
-            </p>
-            <p>
-                <label for="itel">Telefone: </label>
-                <input type="tel" name="itel" id="itel">
-            </p>
-            <p>
-                <label for="inasc">Data de nascimento: </label>
-                <input type="date" name="inasc" id="inasc" required>
-            </p>
+    <div class="cad">
+        <form action="cadastrar.php" method="POST">
             <fieldset>
-                <legend>Informações de endereço:</legend>
+                <legend>Dados pessoais</legend>
                 <p>
-                    <label for="icep">CEP: </label>
-                    <input type="text" name="icep" id="icep" required>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="inome" id="inome" required>
                 </p>
                 <p>
-                    <label for="irua">Rua:</label>
-                    <input type="text" name="irua" id="irua" required>
+                    <label for="iemail">E-mail: </label>
+                    <input type="email" name="iemail" id="iemail" required>
                 </p>
                 <p>
-                    <label for="inumCasa">Número da casa: </label>
-                    <input type="text" name="inumCasa" id="inumCasa" required>
+                    <label for="itel">Telefone: </label>
+                    <input type="tel" name="itel" id="itel">
                 </p>
                 <p>
-                    <label for="ibairro">Bairro: </label>
-                    <input type="text" name="ibairro" id="ibairro" required>
+                    <label for="inasc">Data de nascimento: </label>
+                    <input type="date" name="inasc" id="inasc" required>
                 </p>
-                <p>
-                    <label for="icomple">Complemento: </label>
-                    <input type="text" name="icomple" id="icomple">
-                </p>
-                <p>
-                    <label for="isenha">Crie sua senha: </label>
-                    <input type="text" name="isenha" id="isenha">
-                </p>
-                <p>
-                    <input type="submit" value="Cadastrar" name="submit">
-                </p>
+                <fieldset>
+                    <legend>Informações de endereço:</legend>
+                    <p>
+                        <label for="icep">CEP: </label>
+                        <input type="text" name="icep" id="icep" required>
+                    </p>
+                    <p>
+                        <label for="irua">Rua:</label>
+                        <input type="text" name="irua" id="irua" required>
+                    </p>
+                    <p>
+                        <label for="inumCasa">Número da casa: </label>
+                        <input type="text" name="inumCasa" id="inumCasa" required>
+                    </p>
+                    <p>
+                        <label for="ibairro">Bairro: </label>
+                        <input type="text" name="ibairro" id="ibairro" required>
+                    </p>
+                    <p>
+                        <label for="icomple">Complemento: </label>
+                        <input type="text" name="icomple" id="icomple">
+                    </p>
+                    <p>
+                        <label for="isenha">Crie sua senha: </label>
+                        <input type="text" name="isenha" id="isenha">
+                    </p>
+                    <p>
+                        <input type="submit" value="Cadastrar" name="submit">
+                    </p>
+                </fieldset>
             </fieldset>
-        </fieldset>
-    </form>
+        </form>
+    </div>
     <footer>
         <p id="autorSite">&copy; Matheus H. Biazzi</p>
     </footer>

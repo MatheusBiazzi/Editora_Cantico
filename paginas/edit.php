@@ -1,8 +1,8 @@
 <?php
 if(!empty($_GET['cod_pessoa'])){
 include_once('conexao.php');
-$id = $_GET['cod_pessoa'];
-$sqlconsulta = "select * from pessoas where id=$id";
+$id = $_POST['cod_pessoa'];
+$sqlconsulta = "select * from pessoas where cod_pessoa=$id";
 $result = $con->query($sqlconsulta);
 
 print_r($result);
@@ -12,7 +12,7 @@ if($result->num_rows>0){
     $email =$user_data['email'];
     $telefone =$user_data['telefone'];
     $data_nasc =$user_data['dt_nasc'];
-    $cidade =$user_data['cidade'];
+    $cidade =$user_data['cidade'];  
     }
     print_r($nome);
 }else{
