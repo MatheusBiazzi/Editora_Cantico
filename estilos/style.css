@@ -44,14 +44,6 @@ span{
     margin-left: 13px;
 }
 /*Main:*/
-main{
-    margin: auto;
-    width: 700px;
-    height: 700px;
-    border-radius: 3px 3px 3px 3px ;
-    padding: 10px;
-    background-color: aliceblue;
-}
 article> h1{
     text-align: center;
     padding-bottom: 15px;
@@ -81,14 +73,12 @@ footer{
     padding: 10px;
     font-weight: 900;
 }
-body{
-    background-color: #c0c0c028;
-}
+
 main{
     width: 1300px;
     margin-bottom: 10px;
     border-radius: 0 0 20px 20px;
-    background-color: white;
+    background: linear-gradient(to left,#747070, #C0C0C0);
     text-align: center;
 }
 header{
@@ -101,6 +91,7 @@ header>div{
 footer{
     background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
 }
+
 /*
 Estilos da página de login
 .tLogBody{

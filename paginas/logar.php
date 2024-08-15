@@ -27,6 +27,36 @@
     <title>Editora Cântico</title>
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="shortcut icon" href="../estilos/icons/iconVaticano.ico" type="image/x-icon">
+    <style>
+                body{
+            background-color: #c0c0c028;
+        }
+        main{
+            width: 1300px;
+            margin-bottom: 10px;
+            border-radius: 0 0 20px 20px;
+            text-align: center;
+        }
+        header{
+            display: flex;
+            background: linear-gradient(to left,#747070, #C0C0C0);
+        }
+        header>div{
+            flex: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        span>a:hover{
+            text-decoration: underline;
+            color: gold;
+            font-size: 18px;
+        }
+        footer{
+            background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
+        }
+    </style>
 </head>
 <body>
     <header id="main_header">

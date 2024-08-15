@@ -62,6 +62,7 @@
             height: 20px;
             vertical-align: middle;
         }
+
     </style>
 </head>
 <body>
@@ -77,15 +78,14 @@
             <td>excluir</td>
         </tr>
         <?php
-        while($user_data = mysqli_fetch_assoc($result))
-        {
+        while($user_data = mysqli_fetch_assoc($result)){
             echo"<tr>";
             echo"<td>".$user_data['nome']."</td>";
             echo"<td>".$user_data['email']."</td>";
             echo"<td>".$user_data['telefone']."</td>";
             echo"<td>".$user_data['dt_nasc']."</td>";
             echo"<td>".$user_data['cep']."</td>";
-            echo"<td><a href='edit.php'><img src='../estilos/icons/escrever.png'/></a></td>";
+            echo"<td><a href='edit.php'><img src='../estilos/icons/escrever.png'></a> </td>";
             echo"<td><a href='#'><img src='../estilos/icons/excluir.png'/></a></td>";
             echo"</tr>";
         }
