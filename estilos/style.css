@@ -91,6 +91,9 @@ header>div{
 footer{
     background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
 }
+main{
+    margin: auto;
+}
 
 /*
 Estilos da página de login

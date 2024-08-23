@@ -69,13 +69,18 @@
     <div>
         <table>
         <tr>
-            <td>nome</td>
-            <td>email</td>
-            <td>telefone</td>
-            <td>datan</td>
-            <td>cidade</td>
-            <td>editar</td>
-            <td>excluir</td>
+            <td>Nome</td>
+            <td>E-mail</td>
+            <td>Telefone</td>
+            <td>Data de Nascimento</td>
+            <td>Cep</td>
+            <td>Rua</td>
+            <td>Número</td>
+            <td>Bairro</td>
+            <td>Complemento</td>
+            <td>Editar</td>
+            <td>Excluir</td>
+
         </tr>
         <?php
         while($user_data = mysqli_fetch_assoc($result)){
@@ -85,6 +90,10 @@
             echo"<td>".$user_data['telefone']."</td>";
             echo"<td>".$user_data['dt_nasc']."</td>";
             echo"<td>".$user_data['cep']."</td>";
+            echo"<td>".$user_data['rua']."</td>";
+            echo"<td>".$user_data['numero']."</td>";
+            echo"<td>".$user_data['bairro']."</td>";
+            echo"<td>".$user_data['complemento']."</td>";
             echo"<td><a href='edit.php'><img src='../estilos/icons/escrever.png'></a> </td>";
             echo"<td><a href='#'><img src='../estilos/icons/excluir.png'/></a></td>";
             echo"</tr>";
