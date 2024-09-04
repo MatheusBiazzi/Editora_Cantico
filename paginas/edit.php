@@ -1,8 +1,8 @@
 <?php
 if(!empty($_GET['cod_pessoa'])){
 include_once('conexao.php');
-$id = $_POST['cod_pessoa'];
-$sqlconsulta = "select * from pessoas where cod_pessoa=$id";
+$cod_pessoa = $_GET['cod_pessoa'];
+$sqlconsulta = "select * from pessoas where cod_pessoa=$cod_pessoa";
 $result = $conn->query($sqlconsulta);
 
 print_r($result);
@@ -10,7 +10,7 @@ if($result->num_rows>0){
     while($user_data = mysqli_fetch_assoc($result)){    
         $nome = $user_data['nome'];
         $email = $user_data['email'];
-        $tel = $user_data['tel'];
+        $tel = $user_data['telefone'];
         $data_nasc =$user_data['dt_nasc'];
         $cep = $user_data['cep'];
         $rua = $user_data['rua'];
@@ -19,7 +19,7 @@ if($result->num_rows>0){
         $comple = $user_data['complemento'];
         $senha = $user_data['senha'];
     }
-    print_r($nome);
+    //print_r($nome);
 }else{
     header('Location: listar.php');
 }}
@@ -121,9 +121,6 @@ if($result->num_rows>0){
                 color: gold;
                 font-size: 18px;
             }
-            footer{
-                background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
-            }
     </style>
 </head>
 <body>
@@ -139,10 +136,10 @@ if($result->num_rows>0){
         <form action="atualizar.php" method="POST">
             <fieldset>
                 <legend>Dados pessoais</legend>
-                <p>
+                
                     <label for="inome">Nome: </label>
-                    <input type="text" name="inome" id="inome" value="<?php echo $nome?>" required>
-                </p>
+                    <input type="text" name="nome" id="inome" value="<?php echo $nome?>" required>
+                
                 <p>
                     <label for="iemail">E-mail: </label>
                     <input type="email" name="iemail" id="iemail" value="<?php echo $email?>" required>

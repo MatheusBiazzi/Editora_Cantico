@@ -69,6 +69,7 @@
     <div>
         <table>
         <tr>
+        <td>Codigo</td>
             <td>Nome</td>
             <td>E-mail</td>
             <td>Telefone</td>
@@ -78,6 +79,7 @@
             <td>Número</td>
             <td>Bairro</td>
             <td>Complemento</td>
+            <td>senha</td>
             <td>Editar</td>
             <td>Excluir</td>
 
@@ -85,6 +87,7 @@
         <?php
         while($user_data = mysqli_fetch_assoc($result)){
             echo"<tr>";
+            echo"<td>".$user_data['cod_pessoa']."</td>";
             echo"<td>".$user_data['nome']."</td>";
             echo"<td>".$user_data['email']."</td>";
             echo"<td>".$user_data['telefone']."</td>";
@@ -94,7 +97,8 @@
             echo"<td>".$user_data['numero']."</td>";
             echo"<td>".$user_data['bairro']."</td>";
             echo"<td>".$user_data['complemento']."</td>";
-            echo"<td><a href='edit.php'><img src='../estilos/icons/escrever.png'></a> </td>";
+            echo"<td>".$user_data['senha']."</td>";
+            echo"<td><a href='edit.php?cod_pessoa=$user_data[cod_pessoa]'><img src='../estilos/icons/escrever.png'></a> </td>";
             echo"<td><a href='#'><img src='../estilos/icons/excluir.png'/></a></td>";
             echo"</tr>";
         }
