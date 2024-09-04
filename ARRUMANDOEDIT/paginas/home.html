@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editora Cântico</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../estilos/icons/iconVaticano.ico" type="image/x-icon">
+    <style>    
+        /* Container para centralizar o bloco */
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Estilos do cartão de produto */
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos da imagem do produto */
+        .product-image {
+            width: 100%;
+            height: 200px; /* Tamanho fixo para a imagem */
+            object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+        }
+
+        /* Informações do produto */
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .product-author {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.125rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos do botão de compra */
+        .buy-button {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+        .conteinerItens{
+            display: flex;
+        }
+        .product-container{
+            flex: auto;
+            padding: 10px;
+        }
+        body{
+            background-color: #c0c0c028;
+        }
+        main{
+            width: 1300px;
+            margin-bottom: 10px;
+            border-radius: 0 0 20px 20px;
+            text-align: center;
+            margin: auto;
+        }
+        header{
+            display: flex;
+            background: linear-gradient(to left,#747070, #C0C0C0);
+        }
+        header>div{
+            flex: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        span>a:hover{
+            text-decoration: underline;
+            color: gold;
+            font-size: 18px;
+        }
+        footer{
+            background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
+        }
+    </style>
+</head>
+<body>
+    <header id="main_header">
+        <div class="logoHeader">
+            <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+        </div>
+        <div class="login">
+                    <img src="../estilos/icons/usu.png" alt="login">
+                    <span>
+                        <a href="login.php">Login</a>
+                        
+                        <a href="cadastro.php">Criar conta</a>
+                    </span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Produtos em destaque</h1>
+            <!--Conteiner dos produtos :)-->
+            <div class="conteinerItens">
+
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../estilos/imagens/capaPadrePio.jpg" alt="Título do Livro" class="product-image">
+                        <div class="product-info">
+                            <h2 class="product-title">Padre Pio e o transumanismo critão</h2>
+                            <p class="product-author">José Carlos Zamboni</p>
+                            <p class="product-price">R$ 39,90</p>
+                            <a href="#" class="buy-button">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../estilos/imagens/capaCosmos.jpeg" alt="Título do Livro" class="product-image">
+                        <div class="product-info">
+                            <h2 class="product-title">A posição do homem no cosmos</h2>
+                            <p class="product-author">Max Scheler</p>
+                            <p class="product-price">R$ 59,90</p>
+                            <a href="#" class="buy-button">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../estilos/imagens/capaCatolico.jpeg" alt="Título do Livro" class="product-image">
+                        <div class="product-info">
+                            <h2 class="product-title">Por que sou católico e não outra coisa?</h2>
+                            <p class="product-author">Santiago Martín</p>
+                            <p class="product-price">R$ 45,90</p>
+                            <a href="#" class="buy-button">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../estilos/imagens/capaTotalitarismo.png" alt="Título do Livro" class="product-image">
+                        <div class="product-info">
+                            <h2 class="product-title"></h2>
+                            <p class="product-author"></p>
+                            <p class="product-price"></p>
+                            <a href="#" class="buy-button">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="../estilos/imagens/capaMissa.png" alt="Título do Livro" class="product-image">
+                        <div class="product-info">
+                            <h2 class="product-title"></h2>
+                            <p class="product-author"></p>
+                            <p class="product-price"></p>
+                            <a href="#" class="buy-button">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </article>
+    </main>
+    <footer>
+        <p id="autorSite">&copy; Matheus H. Biazzi</p>
+    </footer>
+</body>
+</html>
