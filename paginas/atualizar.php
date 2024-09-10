@@ -1,38 +1,36 @@
 <?php
 include_once('conexao.php');
 
-if(isset($_POST['update'])){
-$id = $_POST['id'];
-$nome =$_POST['nome'];
-$email =$_POST['email'];
-$telefone =$_POST['telefone'];
-$data_nasc =$_POST['data_nascimento'];
-$cidade =$_POST['cidade'];
+if(isset($_POST['update'])){ 
+    $cod_pessoa= $_POST['cod_pessoa'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $tel = $_POST['telefone'];
+    $data_nasc =$_POST['dt_nasc'];
+    $cep = $_POST['cep'];
+    $rua = $_POST['rua'];
+    $numCasa = $_POST['numero'];
+    $bairro = $_POST['bairro'];
+    $comple = $_POST['complemento'];
+    $senha = $_POST['senha'];
 
 
-$sqlatualiza = "update pessoas set nome='$nome', email='$email', telefone='$telefone', dt_nasc='$data_nasc', cidade='$cidade' where cod_pessoa='$id'";
-$result = $con->query($sqlatualiza);
+    $sqlatualiza = "update pessoas set 
+    nome='$nome', 
+    email='$email',
+    telefone='$tel',
+    dt_nasc='$data_nasc',
+    cep='$cep', 
+    rua='$rua',
+    numero='$numCasa',
+    bairro='$bairro',
+    complemento='$comple',
+    senha='$senha',
 
-}
-header('Location: listar.php');
-?>
+    where pessoas = '$cod_pessoa'";
 
-<?php
-include_once('conexao.php');
-
-if(isset($_POST['update']))
-{
-$id = $_POST['id'];
-$nome =$_POST['nome'];
-$email =$_POST['email'];
-$telefone =$_POST['telefone'];
-$data_nasc =$_POST['data_nascimento'];
-$cidade =$_POST['cidade'];
-
-
-$sqlatualiza = "update cliente set nome='$nome', email='$email', telefone='$telefone', datan='$data_nasc', cidade='$cidade' where id='$id'";
-$result = $con->query($sqlatualiza);
-
+echo "oi";
+    $result = $conn -> query($sqlatualiza);
 }
 header('Location: listar.php');
 ?>

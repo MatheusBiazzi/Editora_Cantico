@@ -94,6 +94,12 @@ footer{
 main{
     margin: auto;
 }
+.btns{
+    display: flex;
+}
+.botao{
+    flex: auto;
+}
 
 /*
 Estilos da página de login

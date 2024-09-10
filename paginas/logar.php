@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="shortcut icon" href="../estilos/icons/iconVaticano.ico" type="image/x-icon">
     <style>
-                body{
+        body{
             background-color: #c0c0c028;
         }
         main{
@@ -55,6 +55,9 @@
         }
         footer{
             background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
+        }
+        p{
+            text-align: center;
         }
     </style>
 </head>

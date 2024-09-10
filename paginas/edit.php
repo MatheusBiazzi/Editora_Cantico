@@ -4,10 +4,11 @@ include_once('conexao.php');
 $cod_pessoa = $_GET['cod_pessoa'];
 $sqlconsulta = "select * from pessoas where cod_pessoa=$cod_pessoa";
 $result = $conn->query($sqlconsulta);
+//print_r($result);
 
-print_r($result);
 if($result->num_rows>0){
     while($user_data = mysqli_fetch_assoc($result)){    
+        $cod_pessoa = $user_data['cod_pessoa'];
         $nome = $user_data['nome'];
         $email = $user_data['email'];
         $tel = $user_data['telefone'];
@@ -137,49 +138,49 @@ if($result->num_rows>0){
             <fieldset>
                 <legend>Dados pessoais</legend>
                 
-                    <label for="inome">Nome: </label>
-                    <input type="text" name="nome" id="inome" value="<?php echo $nome?>" required>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" value="<?php echo $nome?>" required>
                 
                 <p>
-                    <label for="iemail">E-mail: </label>
-                    <input type="email" name="iemail" id="iemail" value="<?php echo $email?>" required>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" value="<?php echo $email?>" required>
                 </p>
                 <p>
-                    <label for="itel">Telefone: </label>
-                    <input type="tel" name="itel" id="itel" value="<?php echo $tel?>">
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="telefone" value="<?php echo $tel?>">
                 </p>
                 <p>
-                    <label for="inasc">Data de nascimento: </label>
-                    <input type="date" name="inasc" id="inasc" value="<?php echo $data_nasc?>" required>
+                    <label for="dt_nasc">Data de nascimento: </label>
+                    <input type="date" name="dt_nasc" id="dt_nasc" value="<?php echo $data_nasc?>" required>
                 </p>
                 <fieldset>
                     <legend>Informações de endereço:</legend>
                     <p>
-                        <label for="icep">CEP: </label>
-                        <input type="text" name="icep" id="icep" value="<?php echo $cep?>" required>
+                        <label for="cep">CEP: </label>
+                        <input type="text" name="cep" id="cep" value="<?php echo $cep?>" required>
                     </p>
                     <p>
-                        <label for="irua">Rua:</label>
-                        <input type="text" name="irua" id="irua" value="<?php echo $rua?>" required>
+                        <label for="rua">Rua:</label>
+                        <input type="text" name="rua" id="rua" value="<?php echo $rua?>" required>
                     </p>
                     <p>
-                        <label for="inumCasa">Número da casa: </label>
-                        <input type="text" name="inumCasa" id="inumCasa" value="<?php echo $numCasa?>" required>
+                        <label for="numero">Número da casa: </label>
+                        <input type="text" name="numero" id="numero" value="<?php echo $numCasa?>" required>
                     </p>
                     <p>
-                        <label for="ibairro">Bairro: </label>
-                        <input type="text" name="ibairro" id="ibairro" value="<?php echo $bairro?>" required>
+                        <label for="bairro">Bairro: </label>
+                        <input type="text" name="bairro" id="bairro" value="<?php echo $bairro?>" required>
                     </p>
                     <p>
-                        <label for="icomple">Complemento: </label>
-                        <input type="text" name="icomple" id="icomple" value="<?php echo $comple?>">
+                        <label for="complemento">Complemento: </label>
+                        <input type="text" name="complemento" id="complemento" value="<?php echo $comple?>">
                     </p>
                     <p>
-                        <label for="isenha">Crie sua senha: </label>
-                        <input type="text" name="isenha" id="isenha" value="<?php echo $senha?>">
+                        <label for="senha">Nova senha: </label>
+                        <input type="text" name="senha" id="senha" value="<?php echo $senha?>">
                     </p>
                     <p>
-                        <input type="hidden" name="id" value="<?php echo $id ?>">
+                        <input type="hidden" name="cod_pessoa" value="<?php echo $cod_pessoa ?>">
                     </p>
                     <p>
                         <input type="submit" name="update" id="update">
