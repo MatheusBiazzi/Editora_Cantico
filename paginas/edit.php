@@ -134,7 +134,7 @@ if($result->num_rows>0){
         </div>
     </header>
     <div class="cad">
-        <form action="atualizar.php" method="POST">
+        <form action="atl.php" method="POST">
             <fieldset>
                 <legend>Dados pessoais</legend>
                 

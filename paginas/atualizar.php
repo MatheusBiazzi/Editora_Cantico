@@ -27,10 +27,13 @@ if(isset($_POST['update'])){
     complemento='$comple',
     senha='$senha',
 
-    where pessoas = '$cod_pessoa'";
-
-echo "oi";
-    $result = $conn -> query($sqlatualiza);
+    where cod_pessoa = ? ";
+    
+    $result1 = $conn -> query($sqlatualiza);
+    echo"oi";
+        
 }
 header('Location: listar.php');
 ?>
+
+

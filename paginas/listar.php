@@ -99,7 +99,7 @@
             echo"<td>".$user_data['complemento']."</td>";
             echo"<td>".$user_data['senha']."</td>";
             echo"<td><a href='edit.php?cod_pessoa=$user_data[cod_pessoa]'><img src='../estilos/icons/escrever.png'></a> </td>";
-            echo"<td><a href='#'><img src='../estilos/icons/excluir.png'/></a></td>";
+            echo "<td><a href='delete.php?cod_pessoa={$user_data['cod_pessoa']}' onclick='return confirmarExclusao(event);'><img src='../estilos/icons/excluir.png' alt='Excluir'/></a></td>";
             echo"</tr>";
         }
         ?>
@@ -107,5 +107,12 @@
     </div>
     <p><a href="logar.php">Voltar a pagína de login</a></p>
     <p><a href='logOut.php'>Deslogar</a></p>
+
+    <script>
+        function confirmarExclusao(event) {
+            var confirmar = confirm("Você tem certeza que deseja excluir este item?");
+            return confirmar;
+        }
+    </script>
 </body>
 </html>
