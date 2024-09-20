@@ -73,9 +73,16 @@
     <main>
         <article>
             <h1>Seu lugar de descanso do mundo...</h1>
-            <p>
+            <div>
                 <a href="listar.php">Listar</a>
-            </p>
+            </div>
+            <div>
+                <a href="../paginas/produtos/cadProd.php">Cadastrar produtos</a>
+            </div>
+            <div>
+                <a href="../paginas/produtos/listProd.php">Listar produtos</a>
+            </div>
+
         </article>
     </main>
     <footer>
