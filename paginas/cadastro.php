@@ -116,15 +116,15 @@ require_once("conexao.php")
                 <legend>Dados pessoais</legend>
                 <p>
                     <label for="inome">Nome: </label>
-                    <input type="text" name="inome" id="inome" required>
+                    <input type="text" name="inome" id="inome" placeholder="Seu nome:" required>
                 </p>
                 <p>
                     <label for="iemail">E-mail: </label>
-                    <input type="email" name="iemail" id="iemail" required>
+                    <input type="email" name="iemail" id="iemail" placeholder="email@gmail.com" required>
                 </p>
                 <p>
                     <label for="itel">Telefone: </label>
-                    <input type="tel" name="itel" id="itel">
+                    <input type="tel" name="itel" id="itel" placeholder="(xx) xxxx-xxxx">
                 </p>
                 <p>
                     <label for="inasc">Data de nascimento: </label>
