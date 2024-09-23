@@ -154,7 +154,7 @@ require_once("conexao.php")
                     </p>
                     <p>
                         <label for="isenha">Crie sua senha: </label>
-                        <input type="text" name="isenha" id="isenha">
+                        <input type="text" name="isenha" id="isenha" placeholder="Sua senha:" autocomplete="current-password" minlength="5" maxlength="10" required>
                     </p>
                     <p>
                         <input type="submit" value="Cadastrar" name="submit">
