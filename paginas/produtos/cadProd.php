@@ -1,10 +1,5 @@
 <?php
-include_once('conexao.php');
-
-
-
-
-
+require_once('../conexao.php')
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,7 +12,7 @@ include_once('conexao.php');
     </header>
     <main>
         <div>
-            <form action="cadastrarProd" method="post">
+            <form action="cadastrarProd.php" method="post">
                 <fieldset>
                     <legend>Dados do produtos</legend>
                     <p>
@@ -35,6 +30,9 @@ include_once('conexao.php');
                     <p>
                         <label for="imagem">Adicionar imagem:</label>
                         <input type="file" name="imagem" id="imagem">
+                    </p>
+                    <p>
+                        <input type="submit" value="Cadastrar" name="submit">
                     </p>
                 </fieldset>
             </form>
