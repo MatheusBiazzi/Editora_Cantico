@@ -1,0 +1,23 @@
+import tkinter as yk
+from tkinter import messagebox
+import sqlite3
+
+class Acesso:
+    def __init__(self,tela):
+        titulo ="Sistema de alunos"
+        self.titulo = titulo
+        self.tela.title(titulo)
+        self.tela.geometry("300x200")
+        self.conn= sqlite3.connect(usuarios.db)
+        self.cursor = self.conn.cursor()
+        self.cursor.execute("""
+        
+            CREATE TABLE IF NOT EXISTS alunos(
+                cod INTEGER PRIMARY KEY,
+                nome TEXT,
+                email TEXT,
+                senha TEXT
+                )
+        """)
+        self.nome_label = tk.Label(tela, text='Nome')
+        self.nome_label.pack()
