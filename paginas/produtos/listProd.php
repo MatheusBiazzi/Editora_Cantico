@@ -97,16 +97,15 @@ session_start();
                         echo"<td>".$user_data['valor']."</td>";
                         echo"<td>".$user_data['descricao']."</td>";
                         echo"<td>".$user_data['imagem']."</td>";
-                        echo"<td><a href='#?cod_produto=$user_data[cod_produto]'><img src='../../estilos/icons/escrever.png'></a> </td>";
-                        echo "<td><a href='# ?cod_produto={$user_data['cod_produto']}' onclick='return confirmarExclusao(event);'><img src='../../estilos/icons/excluir.png' alt='Excluir'/></a></td>";
+                        echo"<td><a href=editProd'?cod_produto=$user_data[cod_produto]'><img src='../../estilos/icons/escrever.png'></a> </td>";
+                        echo "<td><a href='delProd.php ?cod_produto={$user_data['cod_produto']}' onclick='return confirmarExclusao(event);'><img src='../../estilos/icons/excluir.png' alt='Excluir'/></a></td>";
                         echo"</tr>";
                     }
                 ?>
             </table>
-            <button class="backBtn" onclick="window.history.back();">&larr;</button>
         </div>
     </main>
-    <script>
+    <script >
         function confirmarExclusao(event) {
             var confirmar = confirm("Você tem certeza que deseja excluir este item?");
             return confirmar;
