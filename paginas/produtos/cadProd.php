@@ -29,7 +29,7 @@ require_once('../conexao.php')
                     </p>
                     <p>
                         <label for="imagem">Adicionar imagem:</label>
-                        <input type="file" name="imagem" id="imagem">
+                        <input type="file" name="imagem" id="imagem" >
                     </p>
                     <p>
                         <input type="submit" value="Cadastrar" name="submit">

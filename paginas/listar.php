@@ -98,7 +98,12 @@
             echo"<td>".$user_data['bairro']."</td>";
             echo"<td>".$user_data['complemento']."</td>";
             echo"<td>".$user_data['senha']."</td>";
-            echo"<td><a href='edit.php?cod_pessoa=$user_data[cod_pessoa]'><img src='../estilos/icons/escrever.png'></a> </td>";
+            echo"
+            <td>
+            <a href='edit.php?cod_pessoa=$user_data[cod_pessoa]'>
+            <img src='../estilos/icons/escrever.png'>
+            </a> 
+            </td>";
             echo "<td><a href='delete.php?cod_pessoa={$user_data['cod_pessoa']}' onclick='return confirmarExclusao(event);'><img src='../estilos/icons/excluir.png' alt='Excluir'/></a></td>";
             echo"</tr>";
         }

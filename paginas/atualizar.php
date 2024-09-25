@@ -25,9 +25,7 @@ if(isset($_POST['update'])){
     numero='$numCasa',
     bairro='$bairro',
     complemento='$comple',
-    senha='$senha',
-
-    where cod_pessoa = ? ";
+    senha='$senha' where cod_pessoa = $cod_pessoa ";
     
     $result1 = $conn -> query($sqlatualiza);
     echo"oi";

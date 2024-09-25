@@ -4,7 +4,6 @@ include_once('conexao.php');
 $cod_pessoa = $_GET['cod_pessoa'];
 $sqlconsulta = "select * from pessoas where cod_pessoa=$cod_pessoa";
 $result = $conn->query($sqlconsulta);
-//print_r($result);
 
 if($result->num_rows>0){
     while($user_data = mysqli_fetch_assoc($result)){    
@@ -20,7 +19,6 @@ if($result->num_rows>0){
         $comple = $user_data['complemento'];
         $senha = $user_data['senha'];
     }
-    //print_r($nome);
 }else{
     header('Location: listar.php');
 }}
@@ -134,7 +132,7 @@ if($result->num_rows>0){
         </div>
     </header>
     <div class="cad">
-        <form action="atl.php" method="POST">
+        <form action="atualizar.php" method="POST">
             <fieldset>
                 <legend>Dados pessoais</legend>
                 

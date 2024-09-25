@@ -1,5 +1,6 @@
 <?php
-session_start();
+    session_start();
+
     if(empty($_SESSION)){
         echo"<script>location.href='home';</script>";
     }
@@ -97,8 +98,15 @@ session_start();
                         echo"<td>".$user_data['valor']."</td>";
                         echo"<td>".$user_data['descricao']."</td>";
                         echo"<td>".$user_data['imagem']."</td>";
-                        echo"<td><a href=editProd'?cod_produto=$user_data[cod_produto]'><img src='../../estilos/icons/escrever.png'></a> </td>";
-                        echo "<td><a href='delProd.php ?cod_produto={$user_data['cod_produto']}' onclick='return confirmarExclusao(event);'><img src='../../estilos/icons/excluir.png' alt='Excluir'/></a></td>";
+                      
+                        echo"
+                        <td>
+                        <a href='editProd.php?cod_produto={$user_data['cod_produto']}'>
+                        <img src='../../estilos/icons/escrever.png'>
+                        </a> 
+                        </td>";
+
+                        echo "<td><a href='delProd.php?cod_produto={$user_data['cod_produto']}' onclick='return confirmarExclusao(event);'><img src='../../estilos/icons/excluir.png' alt='Excluir'/></a></td>";
                         echo"</tr>";
                     }
                 ?>
