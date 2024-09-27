@@ -50,6 +50,9 @@ if(!empty($_GET['cod_produto'])){
                         <input type="file" name="imagem" id="imagem" value="<?php echo $imagProd ?>" required>
                     </p>
                     <p>
+                        <input type="hidden" name="cod_produto" value="<?php echo $cod_produto ?>">
+                    </p>
+                    <p>
                         <input type="submit" value="Alterar" name="update">
                     </p>
 
