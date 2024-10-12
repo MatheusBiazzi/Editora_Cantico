@@ -45,15 +45,14 @@ section#login > div#formulario{
     padding: 10px;
 }
 form > div.campo{
-    background-color: #5b4967;
-    border: 2px solid #5f2c82;
+    background-color: #c0c0c0;
+    border: 2px solid #c4c4c4;
     display: block;
     width: 100%;
     height: 40px;
     border-radius: 8px;
     margin: 5px 0px;
 }
-
 div.campo > label > i{
     color: white;
     font-size: 2em;
@@ -61,7 +60,7 @@ div.campo > label > i{
     padding: 5px;
 }
 div.campo > input{
-    background-color: #98dedc;
+    background-color: #6d6d6d;
     font-size: 1em;
     width: calc(100% - 45px);
     height: 100%;
@@ -72,22 +71,23 @@ div.campo > input{
 }
 div.campo > input:focus-within{
     background-color: white;
-
+    
 }
 form > input[type=submit]{
     display: block;
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #49a09d;
+    background-color: #7d807c;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 } 
 form > input[type=submit]:hover{
-    background-color: #295e5d;
+    background-color: #949494;
 }
+/*  #635f5f #949494 */
 form > a.btnNCont{
     display: block;
     text-align: center;
@@ -97,13 +97,13 @@ form > a.btnNCont{
     padding-top: 5px;
     margin-top: 5px;
     background-color: white; 
-    color: #295e5d;
-    border: 1px solid #49a09d;
+    color: #656565;
+    border: 1px solid #6565658f;
     border-radius: 7px;
     text-decoration: none;
 }
 form > a.btnNCont:hover{
-    background-color: #5ab7b3;;
+    background-color: #b1b1b1;;
 }
 form > a.btnNCont > i{
     font-size: 0.8em;
