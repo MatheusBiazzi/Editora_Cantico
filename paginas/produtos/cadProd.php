@@ -7,8 +7,30 @@ require_once('../conexao.php')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrado de produtos</title>
-    <header>
-
+    <link rel="shortcut icon" href="../../estilos/icons/biblia.png" type="image/x-icon">
+    <style>
+        header{
+            display: flex;
+            background-image: linear-gradient(to right, #c0c0c0,#383737da );
+        }
+        header>div{
+            flex: auto;
+        }
+        .logoHeader{
+            width: 150px;
+            height: 150px;
+        } 
+        .logoPrinc{
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main_header">
+        <div class="logoHeader">
+            <a href="../home.html"><img src="../../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+        </div>
     </header>
     <main>
         <div>
@@ -38,7 +60,6 @@ require_once('../conexao.php')
             </form>
         </div>
     </main>
-</head>
-<body>
+
 </body>
 </html>

@@ -17,8 +17,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listando produtos</title>
+    <link rel="shortcut icon" href="../../estilos/icons/biblia.png" type="image/x-icon">
     <style>
-                body {
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -62,22 +67,61 @@
             vertical-align: middle;
         }
         .backBtn {
-                position: absolute;
-                color: black;
-                border: none;
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                font-size: 20px;
-    }
+            position: absolute;
+            color: black;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        header{
+             display: flex;
+             background-image: linear-gradient(to right, #c0c0c0,#383737da );
+        }
+        header>div{
+            flex: auto;
+        }
+        .logoHeader{
+            width: 150px;
+            height: 150px;
+        } 
+        .logoPrinc{
+            width: 150px;
+            height: 150px;
+        }
+        div.main_div , .login{
+            display: inline-flex;
+            width: 50px;
+            height: 50px;
+        }
+
+        .div_btn{
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            margin-left: 150px;
+        }
+        .div_btn:hover{
+            background-color: #333;
+            font-size: 1.3em;
+            color: blue;
+            text-decoration: underline;
+        }
 
     </style>
 </head>
 <body>
+    <header id="main_header">
+        <div class="logoHeader">
+            <a href="../home.html"><img src="../../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+        </div>
+    </header>
     <main>
         <div class="listProd">
             <table class="tbProd">
@@ -97,8 +141,15 @@
                         echo"<td>".$user_data['nome']."</td>";
                         echo"<td>".$user_data['valor']."</td>";
                         echo"<td>".$user_data['descricao']."</td>";
-                        echo"<td>".$user_data['imagem']."</td>";
-                      
+                        // Verificar se o caminho da imagem é correto
+                        echo "<td>".$user_data['imagem']."</td>";  // Exibe o caminho da imagem para depuração
+                        // Exibir a imagem se o caminho estiver correto
+                     /*   if (file_exists($user_data['imagem'])) {
+                            echo "<td><img src='".$user_data['imagem']."' alt='Imagem do Produto' style='width:100px; height:100px;'></td>";
+                        } else {
+                            echo "<td>Imagem não encontrada</td>";
+                        }*/
+
                         echo"
                         <td>
                         <a href='editProd.php?cod_produto={$user_data['cod_produto']}'>
@@ -112,6 +163,7 @@
                 ?>
             </table>
         </div>
+
     </main>
     <script >
         function confirmarExclusao(event) {
@@ -120,5 +172,29 @@
         }
     </script>
 
+<div class="product-container">
+    // <div class="product-card" value="<?php echo $cod_produto ?>">
+        <img src="../estilos/imagens/capaCatolico.jpeg" alt="Título do Livro" class="product-image">
+        <div class="product-info">
+            <h2 class="product-title" value="<?php echo $nome?>"></h2>
+            <p class="product-author" value="<?php echo $descricao?>"></p>
+            <p class="product-price" ><?php echo $valor?>"</p>
+            <a href="#" class="buy-button">Comprar</a>
+        </div>
+  //  </div>
+</div>
+<?php
+    while($user_data = mysqli_fetch_assoc($result)){
+        echo "<div>".$user_data['cod_produto'];
+        echo "<img>".$user_data['imagem'];
+        echo "<div>";
+        echo "<h2>".$user_data['nome']."</h2>";
+        echo "<p>".$user_data['descricao']."</p>";
+        echo "<p>".$user_data['valor']."</p>";
+        echo "</div>";
+        echo "</div>";
+    }
+    
+    ?>
 </body>
 </html>

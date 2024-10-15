@@ -4,95 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editora Cântico</title>
+    <link rel="shortcut icon" href="../estilos/icons/biblia.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="shortcut icon" href="../estilos/icons/iconVaticano.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/header.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <style>
+        a{
+            text-decoration: none;
+        }
+        div.main_div , .login{
+            display: inline-flex;
+        }
+
+        .div_btn{
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            margin-left: 150px;
+        }
+        .div_btn:hover{
+            font-size: 1.3em;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        main>img{
+            width: 1000px;
+            height: 290px;
+        }
+        .footerBoxBottom{
+            background-color: #5e5e5e;
+        }
     </style>
 </head>
 <body>
     <header id="main_header">
-        <div class="logoHeader">
-            <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
-        </div>
-        <div class="login">
-                    <img src="../estilos/icons/usu.png" alt="login">
-                    <span>
-                        <a href="login.php">Login</a>
-                        
-                        <a href="cadastro.php">Criar conta</a>
-                    </span>
-            </a>
+        <div class="main_div">
+            <div class="logoHeader">
+                <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+            </div>
+            <div class="div_btn">
+                <a href="">Home</a>
+            </div>
+            <div class="div_btn">
+                <a href="">Produtos</a>
+            </div>
+            <div class="div_btn">
+                <a href="">Carrinho</a>
+            </div>
+            <div class="login">
+                        <img src="../estilos/icons/usu.png" alt="login">
+                        <span>
+                            <a href="login.php">Login</a>
+            
+                            <a href="cadastro.php">Criar conta</a>
+                        </span>
+                </a>
+            </div>
         </div>
     </header>
     <main>
-        <article>
-            <h1>Produtos em destaque</h1>
-            <!--Conteiner dos produtos :)-->
-            <div class="conteinerItens">
-
-                <div class="product-container">
-                    <div class="product-card">
-                        <img src="../estilos/imagens/capaPadrePio.jpg" alt="Título do Livro" class="product-image">
-                        <div class="product-info">
-                            <h2 class="product-title">Padre Pio e o transumanismo cristão</h2>
-                            <p class="product-author">José Carlos Zamboni</p>
-                            <p class="product-price">R$ 39,90</p>
-                            <a href="#" class="buy-button">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-container">
-                    <div class="product-card">
-                        <img src="../estilos/imagens/capaCosmos.jpeg" alt="Título do Livro" class="product-image">
-                        <div class="product-info">
-                            <h2 class="product-title">A posição do homem no cosmos</h2>
-                            <p class="product-author">Max Scheler</p>
-                            <p class="product-price">R$ 59,90</p>
-                            <a href="#" class="buy-button">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-container">
-                    <div class="product-card">
-                        <img src="../estilos/imagens/capaCatolico.jpeg" alt="Título do Livro" class="product-image">
-                        <div class="product-info">
-                            <h2 class="product-title">Por que sou católico e não outra coisa?</h2>
-                            <p class="product-author">Santiago Martín</p>
-                            <p class="product-price">R$ 45,90</p>
-                            <a href="#" class="buy-button">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="product-container">
-                    <div class="product-card">
-                        <img src="../estilos/imagens/capaTotalitarismo.png" alt="Título do Livro" class="product-image">
-                        <div class="product-info">
-                            <h2 class="product-title"></h2>
-                            <p class="product-author"></p>
-                            <p class="product-price"></p>
-                            <a href="#" class="buy-button">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-container">
-                    <div class="product-card">
-                        <img src="../estilos/imagens/capaMissa.png" alt="Título do Livro" class="product-image">
-                        <div class="product-info">
-                            <h2 class="product-title"></h2>
-                            <p class="product-author"></p>
-                            <p class="product-price"></p>
-                            <a href="#" class="buy-button">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-        </article>
+        <img src="../estilos/imagens/livros.jpg" alt="livros">
     </main>
     <footer>
         <div class="footerConteiner">

@@ -26,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editora Cântico</title>
     <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="shortcut icon" href="../estilos/icons/iconVaticano.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../estilos/icons/biblia.png" type="image/x-icon">
     <style>
         body{
             background-color: #c0c0c028;
@@ -59,29 +59,49 @@
         p{
             text-align: center;
         }
+        .main_div{
+            display: flex;
+        }
+        .div_btn{
+            margin-top: 70px;
+            justify-content: center;
+            flex: auto;
+        }
+        .div_btn:hover{
+            font-size: 1.3em;
+            color: blue;
+            text-decoration: underline;
+        }
+        #div_btn{
+            flex:auto;
+        }
+
     </style>
 </head>
 <body>
     <header id="main_header">
-        <div class="logoHeader">
-            <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
-        </div>
-        <div class="login">
-              <img src="../estilos/icons/usu.png" alt="login">
+        <div class="main_div">
+            <div id="div_btn">
+                <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+            </div>
+            <div class="div_btn">
+                <a href="listar.php">Listar</a>
+            </div>
+            <div class="div_btn">
+                <a href="../paginas/produtos/cadProd.php">Cadastrar produtos</a>
+            </div>
+            <div class="div_btn">
+                <a href="../paginas/produtos/listProd.php">Listar produtos</a>
+            </div>
+            <div class="div_btn">
+                  <img src="../estilos/icons/usu.png" alt="login">
+            </div>
         </div>
     </header>
     <main>
         <article>
             <h1>Seu lugar de descanso do mundo...</h1>
-            <div>
-                <a href="listar.php">Listar</a>
-            </div>
-            <div>
-                <a href="../paginas/produtos/cadProd.php">Cadastrar produtos</a>
-            </div>
-            <div>
-                <a href="../paginas/produtos/listProd.php">Listar produtos</a>
-            </div>
+
 
         </article>
     </main>

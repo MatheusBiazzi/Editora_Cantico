@@ -8,7 +8,7 @@ require_once("conexao.php")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="shortcut icon" href="../estilos/icons/usu.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../estilos/icons/biblia.png" type="image/x-icon">
     <style>
         *{
             margin: 0px;
@@ -83,21 +83,28 @@ require_once("conexao.php")
             border-radius: 0 0 20px 20px;
             text-align: center;
         }
-        header{
-            display: flex;
-            background: linear-gradient(to left,#747070, #C0C0C0);
+        div.main_div , .login{
+            display: inline-flex;
+            width: 50px;
+            height: 50px;
         }
-        header>div{
+
+        .div_btn{
             flex: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            margin-left: 150px;
+        }
+        .div_btn:hover{
+            background-color: #333;
+            font-size: 1.3em;
+            color: blue;
+            text-decoration: underline;
         }
         a{
             text-decoration: none;
             color: black;
-        }
-        span>a:hover{
-            text-decoration: underline;
-            color: gold;
-            font-size: 18px;
         }
         footer{
             background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
@@ -105,9 +112,29 @@ require_once("conexao.php")
     </style>
 </head>
 <body>
-    <header id="main_header">
-        <div class="logoHeader">
-            <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+<header id="main_header">
+        <div class="main_div">
+            <div class="logoHeader">
+                <a href="home.html"><img src="../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+            </div>
+            <div class="div_btn">
+                <a href="">Home</a>
+            </div>
+            <div class="div_btn">
+                <a href="">Produtos</a>
+            </div>
+            <div class="div_btn">
+                <a href="">Carrinho</a>
+            </div>
+            <div class="login">
+                        <img src="../estilos/icons/usu.png" alt="login">
+                        <span>
+                            <a href="login.php">Login</a>
+            
+                            <a href="cadastro.php">Criar conta</a>
+                        </span>
+                </a>
+            </div>
         </div>
     </header>
     <div class="cad">
