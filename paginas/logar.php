@@ -64,7 +64,7 @@
         }
         .div_btn{
             margin-top: 70px;
-            justify-content: center;
+            justify-content: space-between;
             flex: auto;
         }
         .div_btn:hover{

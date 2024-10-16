@@ -26,8 +26,6 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
         }
 
         table {
@@ -94,32 +92,47 @@
             width: 150px;
             height: 150px;
         }
-        div.main_div , .login{
-            display: inline-flex;
-            width: 50px;
-            height: 50px;
+        .main_div{
+            display: flex;
         }
-
         .div_btn{
-            flex: auto;
-            justify-content: center;
-            align-items: center;
             margin-top: 70px;
-            margin-left: 150px;
+            justify-content: space-between;
+            flex: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
         }
         .div_btn:hover{
-            background-color: #333;
             font-size: 1.3em;
             color: blue;
             text-decoration: underline;
+        }
+        #div_btn{
+            flex:auto;
         }
 
     </style>
 </head>
 <body>
-    <header id="main_header">
-        <div class="logoHeader">
-            <a href="../home.html"><img src="../../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+<header id="main_header">
+        <div class="main_div">
+            <div id="div_btn">
+                <a href="home.html"><img src="../../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+            </div>
+            <div class="div_btn">
+                <a href="../listar.php">Listar</a>
+            </div>
+            <div class="div_btn">
+                <a href="../../paginas/produtos/cadProd.php">Cadastrar produtos</a>
+            </div>
+            <div class="div_btn">
+                <a href="../../paginas/produtos/listProd.php">Listar produtos</a>
+            </div>
+            <div class="div_btn">
+                  <img src="../../estilos/icons/usu.png" alt="login">
+            </div>
         </div>
     </header>
     <main>
@@ -142,13 +155,13 @@
                         echo"<td>".$user_data['valor']."</td>";
                         echo"<td>".$user_data['descricao']."</td>";
                         // Verificar se o caminho da imagem é correto
-                        echo "<td>".$user_data['imagem']."</td>";  // Exibe o caminho da imagem para depuração
+                        //echo "<td>".$user_data['imagem']."</td>";  // Exibe o caminho da imagem para depuração
                         // Exibir a imagem se o caminho estiver correto
-                     /*   if (file_exists($user_data['imagem'])) {
+                         if (file_exists($user_data['imagem'])) {
                             echo "<td><img src='".$user_data['imagem']."' alt='Imagem do Produto' style='width:100px; height:100px;'></td>";
                         } else {
                             echo "<td>Imagem não encontrada</td>";
-                        }*/
+                        }
 
                         echo"
                         <td>
