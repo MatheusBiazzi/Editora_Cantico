@@ -112,6 +112,9 @@
         #div_btn{
             flex:auto;
         }
+        main{
+            padding: 20px;
+        }
 
     </style>
 </head>
@@ -119,7 +122,7 @@
 <header id="main_header">
         <div class="main_div">
             <div id="div_btn">
-                <a href="home.html"><img src="../../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
+                <a href="../home.html"><img src="../../estilos/imagens/logoCantico.png" alt="Logo Editora Cântico" class="logoPrinc"></a>
             </div>
             <div class="div_btn">
                 <a href="../listar.php">Listar</a>
@@ -155,13 +158,13 @@
                         echo"<td>".$user_data['valor']."</td>";
                         echo"<td>".$user_data['descricao']."</td>";
                         // Verificar se o caminho da imagem é correto
-                        //echo "<td>".$user_data['imagem']."</td>";  // Exibe o caminho da imagem para depuração
+                        echo "<td>".$user_data['imagem']."</td>";  // Exibe o caminho da imagem para depuração
                         // Exibir a imagem se o caminho estiver correto
-                         if (file_exists($user_data['imagem'])) {
+                        /* if (file_exists($user_data['imagem'])) {
                             echo "<td><img src='".$user_data['imagem']."' alt='Imagem do Produto' style='width:100px; height:100px;'></td>";
                         } else {
                             echo "<td>Imagem não encontrada</td>";
-                        }
+                        }*/
 
                         echo"
                         <td>
@@ -184,7 +187,7 @@
             return confirmar;
         }
     </script>
-
+<!--
 <div class="product-container">
     // <div class="product-card" value="<?php echo $cod_produto ?>">
         <img src="../estilos/imagens/capaCatolico.jpeg" alt="Título do Livro" class="product-image">
@@ -195,19 +198,6 @@
             <a href="#" class="buy-button">Comprar</a>
         </div>
   //  </div>
-</div>
-<?php
-    while($user_data = mysqli_fetch_assoc($result)){
-        echo "<div>".$user_data['cod_produto'];
-        echo "<img>".$user_data['imagem'];
-        echo "<div>";
-        echo "<h2>".$user_data['nome']."</h2>";
-        echo "<p>".$user_data['descricao']."</p>";
-        echo "<p>".$user_data['valor']."</p>";
-        echo "</div>";
-        echo "</div>";
-    }
-    
-    ?>
+</div>-->
 </body>
 </html>

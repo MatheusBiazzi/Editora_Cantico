@@ -156,7 +156,7 @@ if(!empty($_GET['cod_produto'])){
     <main>
     <div class="form-container">
         <div class="form-title">Alterar Produto</div>
-        <form action="altProd.php" method="post">
+        <form action="altProd.php" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Dados do Produto</legend>
 

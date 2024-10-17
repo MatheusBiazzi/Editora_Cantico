@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editora Cântico</title>
     <link rel="shortcut icon" href="../estilos/icons/biblia.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/pagPrinc.css">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/header.css">
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html , body {
+            min-height: 100vh;
+            background-color: darkgray;
+        }
         a{
             text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
         }
         div.main_div , .login{
             display: inline-flex;
@@ -29,13 +42,40 @@
             text-decoration: underline;
         }
 
-        main>img{
-            width: 1000px;
-            height: 290px;
-        }
+
         .footerBoxBottom{
             background-color: #5e5e5e;
         }
+        main>img{
+            width: inherit;
+            background-attachment: inherit;
+        }
+        #main_header{
+            height: 150px;
+            background: linear-gradient('c0c0c0');
+            padding: 10px;
+        }
+        .logoHeader{
+            width: 150px;
+            height: 150px;
+
+        }
+        .logoPrinc{
+            width: 150px;
+            height: 150px;}
+        .login{
+            display: flex;
+            position: relative;
+            justify-content: right;
+            align-items: center;
+         }
+         img.capa{
+            height: 500px;
+         }
+         main{
+            width: 97vw;
+            background-color: rgb(176, 176, 176);
+         }
     </style>
 </head>
 <body>
@@ -64,9 +104,7 @@
             </div>
         </div>
     </header>
-    <main>
-        <img src="../estilos/imagens/livros.jpg" alt="livros">
-    </main>
+    <main> <section id="capaSite"> <img src="../estilos/imagens/livroCapa.jpg" alt="" class="capa"></section></main>
     <footer>
         <div class="footerConteiner">
             

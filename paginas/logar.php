@@ -98,13 +98,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <article>
-            <h1>Seu lugar de descanso do mundo...</h1>
+    <main> <section id="capaSite"> <img src="../../../estilos/imagens/livroCapa.jpg" alt="" class="capa"></section></main>
 
-
-        </article>
-    </main>
     <footer>
         <p id="autorSite">&copy; Matheus H. Biazzi</p>
     </footer>

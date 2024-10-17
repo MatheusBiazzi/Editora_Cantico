@@ -97,6 +97,15 @@
         }
         span>a:hover{
             text-decoration: underline;
-            color: gold;
+            color: blue;
             font-size: 18px;
         }
+        #main_header{
+            height: 150px;
+            background: linear-gradient('c0c0c0');
+            padding: 10px;
+        }
+        .logoHeader{
+            width: 150px;
+            height: 150px;
+        } 
