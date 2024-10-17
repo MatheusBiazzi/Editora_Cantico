@@ -21,13 +21,10 @@
     <link rel="shortcut icon" href="../estilos/icons/biblia.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/style.css">
     <style>
-        *{
-            padding: 0px;
+        html, body{
+            background-color: #c0c0c028;
             margin: 0px;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            padding: 0px;
         }
 
         table {
@@ -58,13 +55,16 @@
 
         a {
             text-decoration: none;
-            color: inherit;
+            color: black;
         }
 
         img {
             width: 20px;
             height: 20px;
             vertical-align: middle;
+        }
+        header{
+            background: linear-gradient(to left,#747070, #C0C0C0);
         }
         .main_div{
             display: flex;
@@ -74,15 +74,26 @@
             justify-content: space-between;
             flex: auto;
         }
+        #div_btn{
+            flex:auto;
+        }
         .div_btn:hover{
             font-size: 1.3em;
             color: blue;
             text-decoration: underline;
         }
-        #div_btn{
-            flex:auto;
-        }
-
+        .logoPrinc{
+            width: 150px;
+            height: 150px;}
+        .login{
+            display: flex;
+            position: relative;
+            justify-content: right;
+            align-items: center;
+         }
+         .main_tableList{
+            padding: 15px;
+         }
     </style>
 </head>
 <body>
@@ -101,12 +112,12 @@
                 <a href="../paginas/produtos/listProd.php">Listar produtos</a>
             </div>
             <div class="div_btn">
-                  <img src="../estilos/icons/usu.png" alt="login">
+                  <a href="login.php"><img src="../estilos/icons/usu.png" alt="login"></a>
             </div>
         </div>
     </header>
     <main>
-        <div>
+        <div class="main_tableList">
             <table>
             <tr>
             <td>Codigo</td>
@@ -150,8 +161,7 @@
             </table>
         </div>
     </main>
-
-
+    
     <script>
         function confirmarExclusao(event) {
             var confirmar = confirm("Você tem certeza que deseja excluir este item?");

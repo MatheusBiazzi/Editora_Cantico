@@ -28,8 +28,10 @@
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="shortcut icon" href="../estilos/icons/biblia.png" type="image/x-icon">
     <style>
-        body{
+        html, body{
             background-color: #c0c0c028;
+            margin: 0px;
+            padding: 0px;
         }
         main{
             width: 1300px;
@@ -75,6 +77,15 @@
         #div_btn{
             flex:auto;
         }
+        .logoPrinc{
+            width: 150px;
+            height: 150px;}
+        .login{
+            display: flex;
+            position: relative;
+            justify-content: right;
+            align-items: center;
+         }
 
     </style>
 </head>

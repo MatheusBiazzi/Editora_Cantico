@@ -7,7 +7,6 @@ require_once("conexao.php")
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../estilos/style.css">
     <link rel="shortcut icon" href="../estilos/icons/biblia.png" type="image/x-icon">
     <style>
         *{
@@ -109,6 +108,48 @@ require_once("conexao.php")
         footer{
             background-image: linear-gradient(to bottom, #c0c0c0,#383737ab );
         }
+        header{
+            background: linear-gradient(to left,#747070, #C0C0C0);
+        }
+        #main_header{
+            height: 150px;
+            background: linear-gradient('c0c0c0');
+            padding: 10px;
+        }
+        .logoHeader{
+            width: 150px;
+            height: 150px;
+        }
+        .logoPrinc{
+            width: 150px;
+            height: 150px;}
+        .login{
+            display: flex;
+            position: relative;
+            justify-content: right;
+            align-items: center;
+         }
+         div.main_div , .login{
+            display: inline-flex;
+        }
+        #logo_header{
+            flex: auto;
+        }
+        .div_btn{
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            margin-left: 270px;
+        }
+        .div_btn:hover{
+            font-size: 1.3em;
+            color: blue;
+            text-decoration: underline;
+        }
+        .login{
+            flex: auto;
+        }
     </style>
 </head>
 <body>
@@ -125,15 +166,6 @@ require_once("conexao.php")
             </div>
             <div class="div_btn">
                 <a href="">Carrinho</a>
-            </div>
-            <div class="login">
-                        <img src="../estilos/icons/usu.png" alt="login">
-                        <span>
-                            <a href="login.php">Login</a>
-            
-                            <a href="cadastro.php">Criar conta</a>
-                        </span>
-                </a>
             </div>
         </div>
     </header>
@@ -190,8 +222,5 @@ require_once("conexao.php")
             </fieldset>
         </form>
     </div>
-    <footer>
-        <p id="autorSite">&copy; Matheus H. Biazzi</p>
-    </footer>
 </body>
 </html>

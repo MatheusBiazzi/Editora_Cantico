@@ -4,7 +4,7 @@ footer h1 {
 }
 
 .footerConteiner {
-	background-color: #c0c0c0;
+	background-color: #525151;
 	display: flex;
     padding: 30px 38px 34px 53px;
 	align-items: center;
@@ -55,7 +55,7 @@ footer h1 {
 }
 
 .footerBoxBottom {
-    background-color: #c0c0c0;
+    background-color: #818080;
     text-align: center;
     padding: 1em;
 }
