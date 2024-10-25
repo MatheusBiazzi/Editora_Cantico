@@ -147,6 +147,7 @@
                     <td>Valor</td>
                     <td>Descrição</td>
                     <td>Imagem</td>
+                    <td>Imagem</td>
                     <td>Editar</td>
                     <td>Excluir</td>
                 </tr>
@@ -158,7 +159,7 @@
                         echo"<td>".$user_data['valor']."</td>";
                         echo"<td>".$user_data['descricao']."</td>";
                         // Verificar se o caminho da imagem é correto
-                        //echo "<td>".$user_data['imagem']."</td>";  // Exibe o caminho da imagem para depuração
+                        echo "<td>".$user_data['imagem']."</td>";  // Exibe o caminho da imagem para depuração
                         // Exibir a imagem se o caminho estiver correto
                          if (file_exists($user_data['imagem'])) {
                             echo "<td><img src='".$user_data['imagem']."' alt='Imagem do Produto' style='width:100px; height:100px;'></td>";

@@ -141,7 +141,7 @@ require_once('../conexao.php')
     <main>
     <div class="form-container">
         <div class="form-title">Cadastrar Produto</div>
-        <form action="cadastrarProd.php" method="post" enctype="multipart/form-data">
+        <form action="newCad.php" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Dados do Produto</legend>
 
